@@ -1,0 +1,133 @@
+{
+ "series_ko": "큐브 교실 — AI를 위한 좌표와 벡터 미분",
+ "title_ko": "큐브 교실",
+ "site_title": "큐브 교실 · 중학생도 따라오는 좌표·벡터·행렬·미분 17장 + 실전 연습장",
+ "site_url": "https://adminmrobo.github.io/ai_cube_lab/",
+ "updated": "2026-11-25",
+ "ontology": {
+  "pages": [
+   {
+    "path": "index.html",
+    "kg": false,
+    "export": false
+   },
+   {
+    "path": "01_cube_coordinates.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "02_vectors.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "03_matrices.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "04_cylindrical.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "05_spherical.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "06_balls_and_bowls.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "07_saddles_and_more.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "08_partial_derivatives.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "09_gradient.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "10_gradient_descent.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "11_jacobian.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "12_divergence.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "13_curl.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "14_hessian.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "15_laplacian.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "16_coordinates_and_operators.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "17_final_review.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "practice/index.html",
+    "kg": false,
+    "export": false
+   }
+  ]
+ },
+ "covers": {
+  "status": "대체 표지(CSS·캔버스) 사용 중 — 픽셀아트 지시문은 docs/IMG_specs.md",
+  "keys": [
+   "cover_00",
+   "cover_01",
+   "cover_02",
+   "cover_03",
+   "cover_04",
+   "cover_05",
+   "cover_06",
+   "cover_07",
+   "cover_08",
+   "cover_09",
+   "cover_10",
+   "cover_11",
+   "cover_12",
+   "cover_13",
+   "cover_14",
+   "cover_15",
+   "cover_16",
+   "cover_17",
+   "cover_practice"
+  ]
+ },
+ "translations": [
+  "ko"
+ ]
+}
