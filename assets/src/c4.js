@@ -21,7 +21,7 @@ DUELS.ll_ratio=function(){var r=3915/78;return {fly:Math.abs(r-50)<5,robo:Math.a
 DUELS.eo_keep=function(){var R=LAB.rng(2024),ms=['L',"L'",'L2','R',"R'",'R2','U',"U'",'U2','D',"D'",'D2'],st=CUBE.solved(),mx=0;
   for(var i=0;i<100;i++){st=CUBE.move(st,ms[Math.floor(R()*ms.length)]);mx=Math.max(mx,badEdges(st).n);}
   var n=badEdges(st).n;return {fly:n===0&&mx===0,robo:n>0,report:'L·R·U·D만 무작위 100수를 돌렸어요. 도중 최대 뒤집힌 모서리 <b>'+mx+'개</b>, 끝났을 때 <b>'+n+'개</b>.'};};
-DUELS.zbll_weeks=function(){var w=Math.ceil(493/10);return {fly:w<=52,robo:w>=104,report:'493 ÷ 10 = 49.3 → <b>'+w+'주</b>. 1년(52주) 안이에요. (복습 시간은 빠진 계산)'};};
+DUELS.zbll_weeks=function(){var w=Math.ceil(493/10);return {fly:w>=104,robo:w<=52,report:'493 ÷ 10 = 49.3 → <b>'+w+'주</b>. 1년(52주) 안이에요. (복습 시간은 빠진 계산)'};};
 DUELS.ru_order=function(){var k=CUBE.order(CUBE.perm('R U'));return {fly:k===105,robo:k===4,report:'R U를 처음 상태에서 반복해 처음으로 제자리가 된 횟수: <b>'+k+'번</b>.'};};
 DUELS.comm3=function(){var pc=CUBE.piecesMoved(CUBE.perm("R U R' D R U' R' D'"));var n=pc.corner+pc.edge;return {fly:pc.corner===3&&pc.edge===0,robo:n>=8,report:'[R U R′, D]를 실제로 돌려 움직인 조각을 셌어요: 꼭짓점 <b>'+pc.corner+'개</b>, 모서리 <b>'+pc.edge+'개</b>.'};};
 DUELS.assembly=function(){var R=LAB.rng(777),ok=0;for(var i=0;i<1200;i++)if(CUBE.analyze(randomAssembly(R)).ok)ok++;var p=100*ok/1200;

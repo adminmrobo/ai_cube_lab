@@ -91,7 +91,8 @@ function drawCube(s,st,o){
   function col(i){return o.mask&&o.mask(i)?C.grey:CUBE.COL[st[i]];}
   function op(i){return o.dim&&o.dim(i)?0.45:1;}
   var showIso=o.iso!==false,showNet=o.net!==false;
-  var isoW=showIso?(showNet?250:W0):0,sc=showNet&&showIso?34:52,cx=isoW/2,cy=showNet?150:150;
+  var stack=s.getAttribute('data-stack')==='1'&&showIso&&showNet;
+  var isoW=showIso?(showNet&&!stack?250:W0):0,sc=showNet&&showIso&&!stack?34:52,cx=isoW/2,cy=150;
   if(showIso){
     function P(v){return [cx+(v[0]-v[2])*0.866*sc,cy+(v[0]+v[2])*0.5*sc-v[1]*sc];}
     CUBE.ST.forEach(function(t,i){if(!(t.f==='U'||t.f==='F'||t.f==='R'))return;
@@ -99,7 +100,7 @@ function drawCube(s,st,o){
       E('polygon',{points:pts.map(function(q){return q[0].toFixed(1)+','+q[1].toFixed(1);}).join(' '),fill:col(i),'fill-opacity':op(i),stroke:mark[i]?C.m:'#16212b','stroke-width':mark[i]?3.2:1.2,'stroke-linejoin':'round'},s);});
   }
   if(showNet){
-    var u=showIso?(W0-isoW-10)/12.4:W0/12.4,ox=isoW+(showIso?10:0)+u*0.2,oy=showIso?40:10;
+    var u=stack?W0/12.4:showIso?(W0-isoW-10)/12.4:W0/12.4,ox=stack?u*0.2:isoW+(showIso?10:0)+u*0.2,oy=stack?318:showIso?40:10;
     CUBE.ST.forEach(function(t,i){var f=t.f,k=i%9,r=Math.floor(k/3),c=k%3,x=ox+(NET[f][0]+c)*u,y=oy+(NET[f][1]+r)*u;
       E('rect',{x:x+1,y:y+1,width:u-2,height:u-2,rx:2,fill:col(i),'fill-opacity':op(i),stroke:mark[i]?C.m:'#16212b','stroke-width':mark[i]?3:1},s);
       if(k===4&&o.labels!==false)tx(s,x+u/2,y+u/2+4,f,{'font-size':Math.max(9,u*0.42),'text-anchor':'middle','font-weight':700,fill:st[i]===3||st[i]===0?'#5b6874':'#fff'});});
@@ -108,7 +109,8 @@ function drawCube(s,st,o){
 var RTv={U:[1,0,0],R:[0,0,-1],F:[1,0,0],D:[1,0,0],L:[0,0,1],B:[-1,0,0]},DNv={U:[0,0,1],R:[0,-1,0],F:[0,-1,0],D:[0,0,-1],L:[0,-1,0],B:[0,-1,0]};
 function add3(a,b,k){return [a[0]+k*b[0],a[1]+k*b[1],a[2]+k*b[2]];}
 window.drawCube=drawCube;
-function cubeSvg(el,label,h){return svg(el,640,h||330,label||'큐브의 입체 그림과 펼친 그림');}
+function cubeSvg(el,label,h){var narrow=(el.clientWidth||640)<520,sv=svg(el,640,narrow?790:(h||330),label||'큐브의 입체 그림과 펼친 그림');if(narrow)sv.setAttribute('data-stack','1');return sv;}
+window.cubeSvg=cubeSvg;
 
 var MOVE_KO={U:'윗면',D:'아랫면',R:'오른면',L:'왼면',F:'앞면',B:'뒷면'};
 function moveKo(m){var f=MOVE_KO[m[0]];return m.length===1?f+' 시계 방향 90°':m[1]==="'"?f+' 반시계 방향 90°':f+' 180°';}

@@ -91,7 +91,8 @@ function drawCube(s,st,o){
   function col(i){return o.mask&&o.mask(i)?C.grey:CUBE.COL[st[i]];}
   function op(i){return o.dim&&o.dim(i)?0.45:1;}
   var showIso=o.iso!==false,showNet=o.net!==false;
-  var isoW=showIso?(showNet?250:W0):0,sc=showNet&&showIso?34:52,cx=isoW/2,cy=showNet?150:150;
+  var stack=s.getAttribute('data-stack')==='1'&&showIso&&showNet;
+  var isoW=showIso?(showNet&&!stack?250:W0):0,sc=showNet&&showIso&&!stack?34:52,cx=isoW/2,cy=150;
   if(showIso){
     function P(v){return [cx+(v[0]-v[2])*0.866*sc,cy+(v[0]+v[2])*0.5*sc-v[1]*sc];}
     CUBE.ST.forEach(function(t,i){if(!(t.f==='U'||t.f==='F'||t.f==='R'))return;
@@ -99,7 +100,7 @@ function drawCube(s,st,o){
       E('polygon',{points:pts.map(function(q){return q[0].toFixed(1)+','+q[1].toFixed(1);}).join(' '),fill:col(i),'fill-opacity':op(i),stroke:mark[i]?C.m:'#16212b','stroke-width':mark[i]?3.2:1.2,'stroke-linejoin':'round'},s);});
   }
   if(showNet){
-    var u=showIso?(W0-isoW-10)/12.4:W0/12.4,ox=isoW+(showIso?10:0)+u*0.2,oy=showIso?40:10;
+    var u=stack?W0/12.4:showIso?(W0-isoW-10)/12.4:W0/12.4,ox=stack?u*0.2:isoW+(showIso?10:0)+u*0.2,oy=stack?318:showIso?40:10;
     CUBE.ST.forEach(function(t,i){var f=t.f,k=i%9,r=Math.floor(k/3),c=k%3,x=ox+(NET[f][0]+c)*u,y=oy+(NET[f][1]+r)*u;
       E('rect',{x:x+1,y:y+1,width:u-2,height:u-2,rx:2,fill:col(i),'fill-opacity':op(i),stroke:mark[i]?C.m:'#16212b','stroke-width':mark[i]?3:1},s);
       if(k===4&&o.labels!==false)tx(s,x+u/2,y+u/2+4,f,{'font-size':Math.max(9,u*0.42),'text-anchor':'middle','font-weight':700,fill:st[i]===3||st[i]===0?'#5b6874':'#fff'});});
@@ -108,7 +109,8 @@ function drawCube(s,st,o){
 var RTv={U:[1,0,0],R:[0,0,-1],F:[1,0,0],D:[1,0,0],L:[0,0,1],B:[-1,0,0]},DNv={U:[0,0,1],R:[0,-1,0],F:[0,-1,0],D:[0,0,-1],L:[0,-1,0],B:[0,-1,0]};
 function add3(a,b,k){return [a[0]+k*b[0],a[1]+k*b[1],a[2]+k*b[2]];}
 window.drawCube=drawCube;
-function cubeSvg(el,label,h){return svg(el,640,h||330,label||'큐브의 입체 그림과 펼친 그림');}
+function cubeSvg(el,label,h){var narrow=(el.clientWidth||640)<520,sv=svg(el,640,narrow?790:(h||330),label||'큐브의 입체 그림과 펼친 그림');if(narrow)sv.setAttribute('data-stack','1');return sv;}
+window.cubeSvg=cubeSvg;
 
 var MOVE_KO={U:'윗면',D:'아랫면',R:'오른면',L:'왼면',F:'앞면',B:'뒷면'};
 function moveKo(m){var f=MOVE_KO[m[0]];return m.length===1?f+' 시계 방향 90°':m[1]==="'"?f+' 반시계 방향 90°':f+' 180°';}
@@ -289,7 +291,7 @@ W.cards=function(el,o){
 (function(){
 'use strict';
 var U=window.WU,C=window.WC,E=U.E,H=U.H,svg=U.svg,ctrl=U.ctrl,btn=U.btn,radio=U.radio,slider=U.slider,out=U.out,tx=U.tx,fmt=U.fmt;
-function cubeSvg(el,label){return svg(el,640,330,label);}
+function cubeSvg(el,label){return window.cubeSvg(el,label);}
 
 /* 모서리 방향: 뒤집힌 모서리 개수 세기 (ZZ의 EO) */
 function badEdges(st){var n=0,L=[];CUBE.EDGE.forEach(function(a){var c0=st[a[0]],c1=st[a[1]];var ud0=c0===0||c0===3,ud1=c1===0||c1===3,ok;
@@ -598,7 +600,7 @@ DUELS.ll_ratio=function(){var r=3915/78;return {fly:Math.abs(r-50)<5,robo:Math.a
 DUELS.eo_keep=function(){var R=LAB.rng(2024),ms=['L',"L'",'L2','R',"R'",'R2','U',"U'",'U2','D',"D'",'D2'],st=CUBE.solved(),mx=0;
   for(var i=0;i<100;i++){st=CUBE.move(st,ms[Math.floor(R()*ms.length)]);mx=Math.max(mx,badEdges(st).n);}
   var n=badEdges(st).n;return {fly:n===0&&mx===0,robo:n>0,report:'L·R·U·D만 무작위 100수를 돌렸어요. 도중 최대 뒤집힌 모서리 <b>'+mx+'개</b>, 끝났을 때 <b>'+n+'개</b>.'};};
-DUELS.zbll_weeks=function(){var w=Math.ceil(493/10);return {fly:w<=52,robo:w>=104,report:'493 ÷ 10 = 49.3 → <b>'+w+'주</b>. 1년(52주) 안이에요. (복습 시간은 빠진 계산)'};};
+DUELS.zbll_weeks=function(){var w=Math.ceil(493/10);return {fly:w>=104,robo:w<=52,report:'493 ÷ 10 = 49.3 → <b>'+w+'주</b>. 1년(52주) 안이에요. (복습 시간은 빠진 계산)'};};
 DUELS.ru_order=function(){var k=CUBE.order(CUBE.perm('R U'));return {fly:k===105,robo:k===4,report:'R U를 처음 상태에서 반복해 처음으로 제자리가 된 횟수: <b>'+k+'번</b>.'};};
 DUELS.comm3=function(){var pc=CUBE.piecesMoved(CUBE.perm("R U R' D R U' R' D'"));var n=pc.corner+pc.edge;return {fly:pc.corner===3&&pc.edge===0,robo:n>=8,report:'[R U R′, D]를 실제로 돌려 움직인 조각을 셌어요: 꼭짓점 <b>'+pc.corner+'개</b>, 모서리 <b>'+pc.edge+'개</b>.'};};
 DUELS.assembly=function(){var R=LAB.rng(777),ok=0;for(var i=0;i<1200;i++)if(CUBE.analyze(randomAssembly(R)).ok)ok++;var p=100*ok/1200;

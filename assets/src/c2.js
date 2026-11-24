@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 var U=window.WU,C=window.WC,E=U.E,H=U.H,svg=U.svg,ctrl=U.ctrl,btn=U.btn,radio=U.radio,slider=U.slider,out=U.out,tx=U.tx,fmt=U.fmt;
-function cubeSvg(el,label){return svg(el,640,330,label);}
+function cubeSvg(el,label){return window.cubeSvg(el,label);}
 
 /* 모서리 방향: 뒤집힌 모서리 개수 세기 (ZZ의 EO) */
 function badEdges(st){var n=0,L=[];CUBE.EDGE.forEach(function(a){var c0=st[a[0]],c1=st[a[1]];var ud0=c0===0||c0===3,ud1=c1===0||c1===3,ok;
