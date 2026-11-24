@@ -1,4 +1,4 @@
-/* 큐브 교실 공용 모듈: 도우미 · Cast · Gloss · Quiz · Duel · 진행 막대 · 표지 배경
+/* 좌표 교실 공용 모듈: 도우미 · Cast · Gloss · Quiz · Duel · 진행 막대 · 표지 배경
    외부 라이브러리 없음, 브라우저 저장소 사용 안 함 */
 (function(){
 'use strict';

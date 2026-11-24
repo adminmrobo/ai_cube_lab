@@ -1,4 +1,4 @@
-/* 실전 연습장: 큐브 교실 사업장 시뮬레이터 (외부 라이브러리 없음, 기록은 현재 탭에만) */
+/* 실전 연습장: 좌표 교실 사업장 시뮬레이터 (외부 라이브러리 없음, 기록은 현재 탭에만) */
 (function(){
 'use strict';
 var U=window.WU,C=window.WC,E=U.E,H=U.H,svg=U.svg,tx=U.tx,f2=U.f2,arrow=U.arrow,polyline=U.polyline,contour=U.contour;

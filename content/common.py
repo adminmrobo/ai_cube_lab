@@ -1,6 +1,6 @@
 # 시리즈 공용 데이터
-SERIES = '큐브 교실 — AI를 위한 좌표와 벡터 미분'
-SITE = 'https://adminmrobo.github.io/ai_cube_lab/'
+SERIES = '좌표 교실 — AI를 위한 좌표와 벡터 미분'
+SITE = ''  # 게시할 저장소가 정해지면 GitHub Pages 주소로 바꾸고 다시 빌드 (예: https://adminmrobo.github.io/<저장소>/)
 AUTHOR = {'name': '안상선', 'en': 'Ahn Sangsun', 'site': 'https://adminmrobo.github.io/who_am_i/who_am_i.html', 'org': '(주)M-Robo 대표'}
 
 # who: (이름, 이 시리즈의 자리, 기본 표정, 한 줄 소개)

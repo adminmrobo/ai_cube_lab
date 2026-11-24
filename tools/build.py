@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""큐브 교실 조립 스크립트.
+"""좌표 교실 조립 스크립트.
 content/chNN.py(챕터 데이터) → NN_slug.html, content/index_data.py → index.html
 사용: python3 tools/build.py [--sprites PATH_TO_character_pack]
 """
@@ -208,7 +208,7 @@ def chapter(ch, prevc, nextc):
     stg = ch['stages']
     navl = ''.join('<a href="#lv%d">%d단계%s</a>' % (i, i, '·심화' if (ch['no'], i) in DEEP else '') for i in range(1, len(stg) + 1))
     o = [head('%02d %s — %s' % (n, ch['title'], SERIES), ch['q'], og='img/og/og_%02d.webp' % n)]
-    o.append(f'<nav class="top" aria-label="이 페이지 목차"><a class="logo" href="index.html">큐브 교실</a><a href="#three">3줄 요약</a><a href="#class">수업</a><a href="#map">큰 그림</a>{navl}<a href="#ai">AI 판단</a><a href="#duel">대결</a><a href="#sum">정리</a><a href="#kg">색인</a><a href="#export">꾸러미</a></nav><div id="prog"></div>')
+    o.append(f'<nav class="top" aria-label="이 페이지 목차"><a class="logo" href="index.html">좌표 교실</a><a href="#three">3줄 요약</a><a href="#class">수업</a><a href="#map">큰 그림</a>{navl}<a href="#ai">AI 판단</a><a href="#duel">대결</a><a href="#sum">정리</a><a href="#kg">색인</a><a href="#export">꾸러미</a></nav><div id="prog"></div>')
     # 표지 (대체 표지)
     cc = ['doc', 'fly', 'robo', ch['star'][0]]
     cm = ['front', 'magnify', 'smile', ch['star'][1]]

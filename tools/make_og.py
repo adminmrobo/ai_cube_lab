@@ -45,13 +45,13 @@ def make(key, label, title, motif):
     lines.append(cur)
     for i, ln in enumerate(lines[:4]):
         d.text((60, 150 + i * 72), ln, font=f2, fill=(22, 33, 43))
-    d.text((60, 560), '큐브 교실 — AI를 위한 좌표와 벡터 미분', font=f1, fill=(91, 104, 116))
+    d.text((60, 560), '좌표 교실 — AI를 위한 좌표와 벡터 미분', font=f1, fill=(91, 104, 116))
     im.save(os.path.join(ROOT, 'img', 'og', key + '.webp'), lossless=True)
 
 
 def main():
-    make('og_index', '오리엔테이션', '큐브 교실 — 좌표에서 기울기까지 17장', 0)
-    make('og_practice', '마지막 장 · 실전 연습장', '큐브 교실 사업장 시뮬레이터', 2)
+    make('og_index', '오리엔테이션', '좌표 교실 — 좌표에서 기울기까지 17장', 0)
+    make('og_practice', '마지막 장 · 실전 연습장', '좌표 교실 사업장 시뮬레이터', 2)
     for i in range(1, 18):
         spec = importlib.util.spec_from_file_location('c', os.path.join(ROOT, 'content', 'ch%02d.py' % i))
         m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)

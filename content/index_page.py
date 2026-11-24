@@ -22,10 +22,10 @@ def build(B, chs):
     B.GLOSS = {'벡터 미분': '여러 변수 함수와 흐름(벡터장)의 기울기·휨·퍼짐·회전을 재는 수학. 그래디언트, 발산, 회전, 라플라시안 등이 있어요.',
                '좌표': '공간의 점을 숫자 몇 개로 부르는 약속. 큐브(직교)·원기둥·구면 좌표가 있어요.'}
     o = [B.head(B.SERIES + ' · 오리엔테이션', '중학생도 따라오는 좌표·벡터·행렬·미분 17장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.')]
-    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">큐브 교실</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">네 기둥</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#sources">원자료</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
-    o.append(B.cover_html('cover_00', '큐브 교실', '오리엔테이션 · 00', 'AI를 위한 좌표와 벡터 미분 — 17장 + 실전 연습장', '큐브 교실 표지 — 박사, 조교 둘, 수강생이 큐브·원기둥·지구본 앞에 모인 강의실',
+    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">좌표 교실</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">네 기둥</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#sources">원자료</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
+    o.append(B.cover_html('cover_00', '좌표 교실', '오리엔테이션 · 00', 'AI를 위한 좌표와 벡터 미분 — 17장 + 실전 연습장', '좌표 교실 표지 — 박사, 조교 둘, 수강생이 큐브·원기둥·지구본 앞에 모인 강의실',
                           chars=[('doc', 'front'), ('fly', 'magnify'), ('robo', 'smile'), ('moa', 'cheer')], motif=0))
-    o.append('''<header class="hero"><div class="wrap"><div class="kicker">연구실 해설 시리즈 · 좌표와 벡터 미분 입문</div><h1>큐브 교실 — AI를 위한 좌표와 벡터 미분</h1>
+    o.append('''<header class="hero"><div class="wrap"><div class="kicker">연구실 해설 시리즈 · 좌표와 벡터 미분 입문</div><h1>좌표 교실 — AI를 위한 좌표와 벡터 미분</h1>
 <p class="q">핵심 질문 — 숫자 세 개로 정한 「자리」에서 출발해, AI가 배우는 「기울기」까지 어떻게 이어질까?</p>
 <p>큐브(정육면체)의 모서리에 좌표를 세우는 건 쉬워요. 그런데 그 위에서 그래디언트·야코비안·헤시안·발산·회전·라플라시안 같은 [[벡터 미분]]이 나오면 갑자기 어려워지죠. 이 시리즈는 인포그래픽 네 장에 담긴 개념을, 행렬과 벡터를 처음 배우는 분도 따라오도록 17장으로 나눠 그림을 직접 움직이며 배우게 만든 수업입니다.</p>
 <div class="kpis"><div class="kpi g"><b>17장</b><span>한 장에 개념 2~4단계</span></div><div class="kpi m"><b>4기둥</b><span>자리 · 모양 · 기울기 · 흐름과 휨</span></div><div class="kpi a"><b>10가지</b><span>수업 형식 (토론·배틀·발표·역할극…)</span></div><div class="kpi r"><b>4곳</b><span>마지막 장 실전 연습장 사업장</span></div></div>''' + says([('doc', 'front', '안녕하세요, 이 교실의 선생님 박사입니다. 행렬이나 벡터를 처음 배워도 괜찮아요. 우리가 쓰는 건 「숫자 묶음」, 「숫자 표」, 「아주 짧은 구간의 기울기」 세 가지뿐이에요.'),
@@ -57,7 +57,7 @@ def build(B, chs):
 </div></section>''')
     cards = ''.join('<a href="%s.html"><span class="n">%02d · %s</span><b>%s</b><span>%s</span><span class="fmt">%s</span></a>' % (
         c['slug'], c['no'], (('기둥 %d' % c['pillar']) if c.get('pillar') else '종합') + ' · ' + B.STARS[B.LEVEL[c['no']]].split(' ')[0] + ' · 약 %d분' % B.MINUTES[c['no']] + (' <span class="track basic">기본</span>' if c['no'] in B.BASIC else ' <span class="track adv">심화</span>'), esc(c['title']), esc(c['q']), esc(c['format'][0])) for c in chs)
-    cards += '<a href="practice/index.html"><span class="n">마지막 장</span><b>실전 연습장 — 큐브 교실 사업장 시뮬레이터</b><span>눈썰매장, 드론 배송 센터, 분수 공원, 그릇 공장을 직접 운영하며 배운 것을 써 봐요.</span><span class="fmt">시뮬레이터</span></a>'
+    cards += '<a href="practice/index.html"><span class="n">마지막 장</span><b>실전 연습장 — 좌표 교실 사업장 시뮬레이터</b><span>눈썰매장, 드론 배송 센터, 분수 공원, 그릇 공장을 직접 운영하며 배운 것을 써 봐요.</span><span class="fmt">시뮬레이터</span></a>'
     bas = ' → '.join('<a href="%s.html">%02d</a>' % (c['slug'], c['no']) for c in chs if c['no'] in B.BASIC) + ' → <a href="practice/index.html">실전 연습장</a>'
     adv = ', '.join('<a href="%s.html">%02d %s</a>' % (c['slug'], c['no'], esc(c['title'].split(' — ')[0])) for c in chs if c['no'] not in B.BASIC)
     o.append(f'''<section class="level" id="tracks"><div class="wrap"><h2>두 갈래 과정 — 어디까지 읽을까</h2>
