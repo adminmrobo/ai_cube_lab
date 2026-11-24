@@ -1,0 +1,32 @@
+[S06] 장면 scene_01_lv1 ~ scene_03_lv1 — 비율 3:2, 5장. 참고 그림: style_reference.png, lineup.png, ref_doc.png, ref_fly.png, ref_haru.png, ref_jupanbot.png, ref_moa.png, ref_sia.png, ref_x2.png, ref_x3.png
+요청 첫 줄(대화 시작 시 한 번): Please generate the following 5 images one by one, each as a separate image, keeping exactly the character designs of the attached reference images and the same pixel-art style for all of them.
+
+### scene_01_lv1 — 01장 1단계 · 조각 세 종류 — 가운데, 모서리, 꼭짓점 · 레고 분류 비유 (미공개 X3, 박사, 초파리 연구원)  → 저장: scene_01_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Sorting toy building blocks by shape into three bins: long two-sided bricks in one bin, three-sided corner blocks in another, single round pegs in the third. A disassembled puzzle cube lies nearby to show its pieces belong to the same three kinds.
+Characters (use the attached reference images): secret student X3 (small solid black silhouette, only two white eyes visible); the Professor (spiky black hair with one white streak, round glasses, white lab coat over black vest and black tie); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_01_lv2 — 01장 2단계 · 곱셈 원리로 세기 — 4천3백경이 나오는 길 · 자물쇠 비유 (주판봇, 초파리 연구원, 미공개 X3)  → 저장: scene_01_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A giant combination padlock with four number-less dials (colored bands only). Jupanbot spins the first three dials; the fourth dial is glowing and locked in place, showing it is decided automatically by the others. The fruit-fly researcher points at the glowing dial.
+Characters (use the attached reference images): Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings); secret student X3 (small solid black silhouette, only two white eyes visible).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_02_lv1 — 02장 1단계 · 돌리기 기호 — R, R′, R2와 되돌리기 · 양말과 신발 비유 (조수 하루, 인턴 모아)  → 저장: scene_02_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Two moments side by side in one picture: on the left, Haru sits on a bench putting on socks and then shoes; on the right, she takes the shoes off first, then the socks. Footwear placed in a clear order on the floor.
+Characters (use the attached reference images): assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers); intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_02_lv2 — 02장 2단계 · 층마다 쌓기 8단계 — 아래부터 차곡차곡 · 탑 쌓기 비유 (인턴 시아, 인턴 모아, 미공개 X2)  → 저장: scene_02_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Building a three-layer block tower from the bottom up. The bottom layer is complete; the middle layer is being placed; a hand briefly lifts a block from the finished layer and puts it right back, showing nothing stays broken.
+Characters (use the attached reference images): intern Sia (long straight black hair, calm face, black-and-white maid-style uniform with a grey bow); intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful); secret student X2 (tall solid black silhouette, only two white eyes visible).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_03_lv1 — 03장 1단계 · 십자와 F2L — 짝지어 한 번에 넣기 · 양말 짝 비유 (주판봇, 미공개 X3)  → 저장: scene_03_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Folded pairs of socks placed into an open drawer in one motion, next to a messy pile of single unmatched socks. Jupanbot carries a neat pair; X3 compares the two methods.
+Characters (use the attached reference images): Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads); secret student X3 (small solid black silhouette, only two white eyes visible).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.

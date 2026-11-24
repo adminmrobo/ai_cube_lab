@@ -1,0 +1,32 @@
+[S08] 장면 scene_06_lv1 ~ scene_08_lv1 — 비율 3:2, 5장. 참고 그림: style_reference.png, lineup.png, ref_doc.png, ref_fly.png, ref_haru.png, ref_moa.png, ref_sia.png, ref_x1.png, ref_x2.png
+요청 첫 줄(대화 시작 시 한 번): Please generate the following 5 images one by one, each as a separate image, keeping exactly the character designs of the attached reference images and the same pixel-art style for all of them.
+
+### scene_06_lv1 — 06장 1단계 · 군의 네 약속 — 이어 하기, 아무것도 안 하기, 되돌리기, 묶기 · 리모컨 비유 (미공개 X2, 조수 하루)  → 저장: scene_06_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A huge TV remote control with a colored "up" button and "down" button (shapes only, no symbols) and a TV showing a plain colored channel screen; pressing up then down returns to the same color.
+Characters (use the attached reference images): secret student X2 (tall solid black silhouette, only two white eyes visible); assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_06_lv2 — 06장 2단계 · 순서를 바꾸면 — RU ≠ UR (비가환) · 양말과 장갑 비유 (조수 하루, 미공개 X2, 초파리 연구원)  → 저장: scene_06_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Two students side by side: one putting on left and right gloves in any order (both results look the same), the other confused after trying to wear shoes before socks (a sock sticking out on top of a shoe). The fruit-fly researcher compares them.
+Characters (use the attached reference images): assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers); secret student X2 (tall solid black silhouette, only two white eyes visible); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_07_lv1 — 07장 1단계 · 켤레 A B A⁻¹ — 준비, 작업, 되돌리기 · 의자 가져오기 비유 (미공개 X1, 박사)  → 저장: scene_07_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: The Professor brings a small step stool, climbs it to fix a tilted picture frame on a high shelf, and the stool is shown being carried away afterwards; the room is unchanged except the frame is now straight.
+Characters (use the attached reference images): secret student X1 (solid black silhouette, only two white eyes visible); the Professor (spiky black hair with one white streak, round glasses, white lab coat over black vest and black tie).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_07_lv2 — 07장 2단계 · 교환자 [A, B] — 겹치는 곳만 움직여 3-순환 만들기 · 엇갈린 자리 비유 (미공개 X1, 인턴 시아, 조수 하루)  → 저장: scene_07_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Three students rotate seats around a small round table with three chairs, each moving one seat over in the same direction (shown with footprint trails), while all other chairs in the room stay untouched.
+Characters (use the attached reference images): secret student X1 (solid black silhouette, only two white eyes visible); intern Sia (long straight black hair, calm face, black-and-white maid-style uniform with a grey bow); assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_08_lv1 — 08장 1단계 · 비틀림의 합과 뒤집힘의 수 — 방향 조건 둘 · 12시간 시계 비유 (인턴 모아, 초파리 연구원)  → 저장: scene_08_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A large wall clock whose hand can only jump a full circle at a time (a curved arrow loops all the way around and lands on the same mark). The hand points at a mark that is not the top; the fruit-fly researcher shows it can never reach the top this way.
+Characters (use the attached reference images): intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.

@@ -1,0 +1,32 @@
+[S09] 장면 scene_08_lv2 ~ scene_10_lv2 — 비율 3:2, 5장. 참고 그림: style_reference.png, lineup.png, ref_fly.png, ref_haru.png, ref_jupanbot.png, ref_moa.png, ref_sia.png, ref_x1.png, ref_x3.png
+요청 첫 줄(대화 시작 시 한 번): Please generate the following 5 images one by one, each as a separate image, keeping exactly the character designs of the attached reference images and the same pixel-art style for all of them.
+
+### scene_08_lv2 — 08장 2단계 · 자리 바꿈의 홀짝 — 두 조각만 맞바꿀 수 없는 이유 · 카드 두 줄 비유 (주판봇, 초파리 연구원, 인턴 모아)  → 저장: scene_08_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Two rows of playing cards (plain patterned backs, no numbers) being shuffled at the same moment by Jupanbot using both hands; Moa watches, and the fruit-fly researcher notes the two rows always change together.
+Characters (use the attached reference images): Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings); intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_09_lv1 — 09장 1단계 · 부분군과 잉여류 — 시계를 같은 크기 방으로 나누기 · 반 나누기 비유 (인턴 시아, 인턴 모아)  → 저장: scene_09_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: Twelve small student figures lined up and divided into four equal teams of three, each team wearing a different colored armband (blue, red, green, amber).
+Characters (use the attached reference images): intern Sia (long straight black hair, calm face, black-and-white maid-style uniform with a grey bow); intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_09_lv2 — 09장 2단계 · 두 단계 찾기 — 먼저 방에 들어가고, 방 안에서 마무리 · 우편번호 비유 (인턴 시아, 미공개 X1)  → 저장: scene_09_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A city map split into large colored districts; an envelope flies first into one district and then to one small house inside it.
+Characters (use the attached reference images): intern Sia (long straight black hair, calm face, black-and-white maid-style uniform with a grey bow); secret student X1 (solid black silhouette, only two white eyes visible).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_10_lv1 — 10장 1단계 · 티슬스웨이트 4단계 — 부분군 사슬을 따라 내려가기 · 채용 깔때기 비유 (주판봇, 미공개 X3)  → 저장: scene_10_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A four-stage selection funnel: many small figures enter a wide door at the top, fewer pass through each narrower gate, and only one reaches the bottom. Jupanbot operates the gates; X3 counts.
+Characters (use the attached reference images): Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads); secret student X3 (small solid black silhouette, only two white eyes visible).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_10_lv2 — 10장 2단계 · 코시엠바 2단계 — 깔때기를 줄이고 넓게 찾기 · 내비게이션 경유지 비유 (주판봇, 조수 하루)  → 저장: scene_10_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A car navigation board showing a start dot, a destination flag and one movable waypoint flag; two route lines are compared, one noticeably shorter after the waypoint is shifted.
+Characters (use the attached reference images): Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads); assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.

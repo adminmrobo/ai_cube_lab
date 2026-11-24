@@ -1,0 +1,32 @@
+[S10] 장면 scene_11_lv1 ~ scene_13_lv1 — 비율 3:2, 5장. 참고 그림: style_reference.png, lineup.png, ref_fly.png, ref_haru.png, ref_jupanbot.png, ref_moa.png, ref_sia.png, ref_x1.png, ref_x3.png
+요청 첫 줄(대화 시작 시 한 번): Please generate the following 5 images one by one, each as a separate image, keeping exactly the character designs of the attached reference images and the same pixel-art style for all of them.
+
+### scene_11_lv1 — 11장 1단계 · 점은 상태, 선은 한 수 — 작은 무리의 케일리 그래프 · 노선도 비유 (조수 하루, 미공개 X1)  → 저장: scene_11_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A colorful subway map made only of dots and lines with a big green station in the center; small figures ride from station to station.
+Characters (use the attached reference images): assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers); secret student X1 (solid black silhouette, only two white eyes visible).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_11_lv2 — 11장 2단계 · 지름 — 가장 먼 점까지의 거리 · 여섯 다리 비유 (조수 하루, 미공개 X1, 초파리 연구원)  → 저장: scene_11_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A web of people figures connected by lines of handshakes, spreading out in rings from one person in the middle; the farthest figure is only a few links away.
+Characters (use the attached reference images): assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers); secret student X1 (solid black silhouette, only two white eyes visible); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_12_lv1 — 12장 1단계 · 하한으로 가지치기 — IDA* · 직선거리 비유 (미공개 X3, 인턴 모아)  → 저장: scene_12_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A hiker at a fork in a trail: a straight dotted line runs directly to the destination flag, while the real road winds around a hill; the hiker decides a branch is too long and turns back.
+Characters (use the attached reference images): secret student X3 (small solid black silhouette, only two white eyes visible); intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_12_lv2 — 12장 2단계 · 패턴 데이터베이스 — 작은 문제를 미리 다 풀어 둔 표 · 구구단표 비유 (미공개 X3, 주판봇)  → 저장: scene_12_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A wall chart grid of colored squares (no numbers) and a tall cabinet with many small drawers; Jupanbot pulls a ready-made answer card from a drawer instead of calculating.
+Characters (use the attached reference images): secret student X3 (small solid black silhouette, only two white eyes visible); Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_13_lv1 — 13장 1단계 · 위 경계와 아래 경계 — 52와 18에서 20과 20까지 · 문 높이 비유 (인턴 시아, 초파리 연구원)  → 저장: scene_13_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A doorway with a tall marker bar sliding down from above and a short marker bar rising from below, closing in on the exact height of the door; height ticks are plain lines without numbers.
+Characters (use the attached reference images): intern Sia (long straight black hair, calm face, black-and-white maid-style uniform with a grey bow); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.

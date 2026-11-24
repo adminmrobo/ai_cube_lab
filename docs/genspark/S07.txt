@@ -1,0 +1,32 @@
+[S07] 장면 scene_03_lv2 ~ scene_05_lv2 — 비율 3:2, 5장. 참고 그림: style_reference.png, lineup.png, ref_doc.png, ref_fly.png, ref_haru.png, ref_jupanbot.png, ref_moa.png, ref_sia.png, ref_x1.png, ref_x2.png
+요청 첫 줄(대화 시작 시 한 번): Please generate the following 5 images one by one, each as a separate image, keeping exactly the character designs of the attached reference images and the same pixel-art style for all of them.
+
+### scene_03_lv2 — 03장 2단계 · OLL과 PLL — 무늬로 알아보는 마지막 층 · 표지판 비유 (인턴 시아, 조수 하루)  → 저장: scene_03_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A wall of picture-only signs (traffic light, plain colored shapes, simple 3x3 yellow-and-grey grid patterns). Sia instantly recognizes a pattern and picks a matching card from a small box, showing "recognize, then act".
+Characters (use the attached reference images): intern Sia (long straight black hair, calm face, black-and-white maid-style uniform with a grey bow); assistant Haru (long pink hair in two buns with a navy streak, lavender hoodie under a white lab coat, blue jeans, lavender sneakers).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_04_lv1 — 04장 1단계 · Roux — 양쪽 블록 먼저, 가운데 줄은 나중에 · 책장 비유 (인턴 시아, 박사)  → 저장: scene_04_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A bookshelf whose left and right sections are completely filled, while the middle column is empty; Sia slides the last books into the middle without touching either side.
+Characters (use the attached reference images): intern Sia (long straight black hair, calm face, black-and-white maid-style uniform with a grey bow); the Professor (spiky black hair with one white streak, round glasses, white lab coat over black vest and black tie).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_04_lv2 — 04장 2단계 · ZZ — 모서리 방향을 먼저 맞추고 네 면만 돌리기 · 일방통행 비유 (인턴 모아, 초파리 연구원)  → 저장: scene_04_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A toy one-way loop road where all small toy cars face the same direction; Moa guides traffic with a flag; no car is ever turned backwards.
+Characters (use the attached reference images): intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_05_lv1 — 05장 1단계 · 식 묶음의 크기 — 21개부터 약 3,915개까지 · 단어장 비유 (인턴 모아, 주판봇)  → 저장: scene_05_lv1.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A desk with a thin vocabulary booklet beside a towering stack of extremely thick books; a wall calendar made of blank squares with some squares checked off. Moa looks at the tall stack with determination; Jupanbot calculates on its abacus body.
+Characters (use the attached reference images): intern Moa (long light-brown hair, white frilled headband with ribbon, mustard cardigan, red plaid bow, white apron dress, cheerful); Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+
+### scene_05_lv2 — 05장 2단계 · 다섯 갈래 — 외우기 대신 다른 목표 · 여행 경로 비유 (미공개 X1, 미공개 X2, 초파리 연구원)  → 저장: scene_05_lv2.png
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A big map board with three different paths to the same flag: a wide straight highway, a short steep mountain trail, and a scenic winding river path. X1 and X2 point at different paths; the fruit-fly researcher asks which goal matters.
+Characters (use the attached reference images): secret student X1 (solid black silhouette, only two white eyes visible); secret student X2 (tall solid black silhouette, only two white eyes visible); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
