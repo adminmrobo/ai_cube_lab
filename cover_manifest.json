@@ -1,0 +1,698 @@
+{
+ "series_ko": "큐브 교실 — 루빅스 큐브로 배우는 군·탐색·AI",
+ "title_ko": "큐브 교실",
+ "site_title": "큐브 교실 · 중학생도 따라오는 큐브의 수학 15장 + 실전 연습장",
+ "site_url": "https://adminmrobo.github.io/ai_cube_lab/",
+ "updated": "2026-11-25",
+ "ontology": {
+  "pages": [
+   {
+    "path": "01_cube_anatomy.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "02_notation_lbl.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "03_cfop.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "04_roux_zz.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "05_algorithm_ecosystem.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "06_cube_group.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "07_conjugates_commutators.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "08_solvability.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "09_subgroups_cosets.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "10_thistlethwaite_kociemba.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "11_cayley_graph.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "12_ida_star_pdb.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "13_gods_number.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "14_modern_ai.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "15_final_review.html",
+    "kg": true,
+    "export": true
+   }
+  ],
+  "files": []
+ },
+ "i18n": {
+  "langs": [
+   "ko"
+  ],
+  "pages": {
+   "ko": 17
+  },
+  "readme_langs": [
+   "ko"
+  ]
+ },
+ "languages": [
+  "ko"
+ ],
+ "items": [
+  {
+   "id": "cover_00",
+   "role": "cover",
+   "path": "index.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_00.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_index",
+   "role": "og",
+   "path": "img/og/og_index.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_00",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_01",
+   "role": "cover",
+   "path": "01_cube_anatomy.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x3"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_01.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_01",
+   "role": "og",
+   "path": "img/og/og_01.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_01",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_02",
+   "role": "cover",
+   "path": "02_notation_lbl.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "asst"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_02.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_02",
+   "role": "og",
+   "path": "img/og/og_02.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_02",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_03",
+   "role": "cover",
+   "path": "03_cfop.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "robo"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_03.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_03",
+   "role": "og",
+   "path": "img/og/og_03.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_03",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_04",
+   "role": "cover",
+   "path": "04_roux_zz.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "sia"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_04.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_04",
+   "role": "og",
+   "path": "img/og/og_04.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_04",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_05",
+   "role": "cover",
+   "path": "05_algorithm_ecosystem.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_05.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_05",
+   "role": "og",
+   "path": "img/og/og_05.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_05",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_06",
+   "role": "cover",
+   "path": "06_cube_group.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x2"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_06.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_06",
+   "role": "og",
+   "path": "img/og/og_06.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_06",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_07",
+   "role": "cover",
+   "path": "07_conjugates_commutators.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x1"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_07.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_07",
+   "role": "og",
+   "path": "img/og/og_07.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_07",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_08",
+   "role": "cover",
+   "path": "08_solvability.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_08.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_08",
+   "role": "og",
+   "path": "img/og/og_08.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_08",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_09",
+   "role": "cover",
+   "path": "09_subgroups_cosets.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "sia"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_09.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_09",
+   "role": "og",
+   "path": "img/og/og_09.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_09",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_10",
+   "role": "cover",
+   "path": "10_thistlethwaite_kociemba.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "robo"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_10.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_10",
+   "role": "og",
+   "path": "img/og/og_10.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_10",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_11",
+   "role": "cover",
+   "path": "11_cayley_graph.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "asst"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_11.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_11",
+   "role": "og",
+   "path": "img/og/og_11.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_11",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_12",
+   "role": "cover",
+   "path": "12_ida_star_pdb.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x3"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_12.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_12",
+   "role": "og",
+   "path": "img/og/og_12.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_12",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_13",
+   "role": "cover",
+   "path": "13_gods_number.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "fly"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_13.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_13",
+   "role": "og",
+   "path": "img/og/og_13.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_13",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_14",
+   "role": "cover",
+   "path": "14_modern_ai.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x2"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_14.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_14",
+   "role": "og",
+   "path": "img/og/og_14.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_14",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_15",
+   "role": "cover",
+   "path": "15_final_review.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "sia"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_15.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_15",
+   "role": "og",
+   "path": "img/og/og_15.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_15",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  },
+  {
+   "id": "cover_practice",
+   "role": "cover",
+   "path": "practice/index.html#top",
+   "status": "placeholder",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "asst",
+    "sia",
+    "moa"
+   ],
+   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "file": "img/cover/cover_practice.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "og_practice",
+   "role": "og",
+   "path": "img/og/og_practice.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_practice",
+   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+  }
+ ]
+}
