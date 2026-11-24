@@ -103,7 +103,7 @@
    "id": "cover_00",
    "role": "cover",
    "path": "index.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -111,7 +111,7 @@
     "jupanbot",
     "moa"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_00.webp",
    "size": [
     1920,
@@ -132,13 +132,13 @@
    ],
    "status": "ok",
    "source_of": "cover_00",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_01",
    "role": "cover",
    "path": "01_cube_anatomy.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -146,7 +146,7 @@
     "jupanbot",
     "x3"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_01.webp",
    "size": [
     1920,
@@ -167,13 +167,13 @@
    ],
    "status": "ok",
    "source_of": "cover_01",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_02",
    "role": "cover",
    "path": "02_notation_lbl.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -181,7 +181,7 @@
     "jupanbot",
     "asst"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_02.webp",
    "size": [
     1920,
@@ -202,13 +202,13 @@
    ],
    "status": "ok",
    "source_of": "cover_02",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_03",
    "role": "cover",
    "path": "03_cfop.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -216,7 +216,7 @@
     "jupanbot",
     "robo"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_03.webp",
    "size": [
     1920,
@@ -237,13 +237,13 @@
    ],
    "status": "ok",
    "source_of": "cover_03",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_04",
    "role": "cover",
    "path": "04_roux_zz.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -251,7 +251,7 @@
     "jupanbot",
     "sia"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_04.webp",
    "size": [
     1920,
@@ -272,13 +272,13 @@
    ],
    "status": "ok",
    "source_of": "cover_04",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_05",
    "role": "cover",
    "path": "05_algorithm_ecosystem.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -286,7 +286,7 @@
     "jupanbot",
     "moa"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_05.webp",
    "size": [
     1920,
@@ -307,13 +307,13 @@
    ],
    "status": "ok",
    "source_of": "cover_05",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_06",
    "role": "cover",
    "path": "06_cube_group.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -321,7 +321,7 @@
     "jupanbot",
     "x2"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_06.webp",
    "size": [
     1920,
@@ -342,13 +342,13 @@
    ],
    "status": "ok",
    "source_of": "cover_06",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_07",
    "role": "cover",
    "path": "07_conjugates_commutators.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -356,7 +356,7 @@
     "jupanbot",
     "x1"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_07.webp",
    "size": [
     1920,
@@ -377,13 +377,13 @@
    ],
    "status": "ok",
    "source_of": "cover_07",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_08",
    "role": "cover",
    "path": "08_solvability.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -391,7 +391,7 @@
     "jupanbot",
     "moa"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_08.webp",
    "size": [
     1920,
@@ -412,13 +412,13 @@
    ],
    "status": "ok",
    "source_of": "cover_08",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_09",
    "role": "cover",
    "path": "09_subgroups_cosets.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -426,7 +426,7 @@
     "jupanbot",
     "sia"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_09.webp",
    "size": [
     1920,
@@ -447,13 +447,13 @@
    ],
    "status": "ok",
    "source_of": "cover_09",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_10",
    "role": "cover",
    "path": "10_thistlethwaite_kociemba.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -461,7 +461,7 @@
     "jupanbot",
     "robo"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_10.webp",
    "size": [
     1920,
@@ -482,13 +482,13 @@
    ],
    "status": "ok",
    "source_of": "cover_10",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_11",
    "role": "cover",
    "path": "11_cayley_graph.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -496,7 +496,7 @@
     "jupanbot",
     "asst"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_11.webp",
    "size": [
     1920,
@@ -517,13 +517,13 @@
    ],
    "status": "ok",
    "source_of": "cover_11",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_12",
    "role": "cover",
    "path": "12_ida_star_pdb.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -531,7 +531,7 @@
     "jupanbot",
     "x3"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_12.webp",
    "size": [
     1920,
@@ -552,13 +552,13 @@
    ],
    "status": "ok",
    "source_of": "cover_12",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_13",
    "role": "cover",
    "path": "13_gods_number.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -566,7 +566,7 @@
     "jupanbot",
     "fly"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_13.webp",
    "size": [
     1920,
@@ -587,13 +587,13 @@
    ],
    "status": "ok",
    "source_of": "cover_13",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_14",
    "role": "cover",
    "path": "14_modern_ai.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -601,7 +601,7 @@
     "jupanbot",
     "x2"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_14.webp",
    "size": [
     1920,
@@ -622,13 +622,13 @@
    ],
    "status": "ok",
    "source_of": "cover_14",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_15",
    "role": "cover",
    "path": "15_final_review.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -636,7 +636,7 @@
     "jupanbot",
     "sia"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_15.webp",
    "size": [
     1920,
@@ -657,13 +657,13 @@
    ],
    "status": "ok",
    "source_of": "cover_15",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
   },
   {
    "id": "cover_practice",
    "role": "cover",
    "path": "practice/index.html#top",
-   "status": "placeholder",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -671,7 +671,7 @@
     "sia",
     "moa"
    ],
-   "note": "대체 표지: 캐릭터 팩 96px + 코드로 그린 픽셀 큐브, 2배 NEAREST, 무손실 WebP. Genspark 픽셀아트로 교체 예정(docs/IMG_specs.md)",
+   "note": "Genspark 16비트 픽셀아트(2048×1152)를 480×270 격자로 맞춘 뒤 4배 NEAREST, 무손실 WebP",
    "file": "img/cover/cover_practice.webp",
    "size": [
     1920,
@@ -692,7 +692,457 @@
    ],
    "status": "ok",
    "source_of": "cover_practice",
-   "note": "표지 격자(960×540)에서 600×315를 잘라 2배"
+   "note": "표지 격자(480×270)에서 400×210을 잘라 3배"
+  },
+  {
+   "id": "scene_01_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_01_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_01_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_01_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_02_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_02_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_02_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_02_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_03_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_03_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_03_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_03_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_04_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_04_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_04_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_04_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_05_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_05_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_05_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_05_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_06_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_06_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_06_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_06_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_07_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_07_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_07_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_07_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_08_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_08_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_08_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_08_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_09_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_09_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_09_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_09_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_10_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_10_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_10_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_10_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_11_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_11_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_11_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_11_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_12_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_12_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_12_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_12_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_13_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_13_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_13_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_13_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_14_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_14_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_14_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_14_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_15_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_15_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
+  },
+  {
+   "id": "scene_15_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_15_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "grid": [
+    300,
+    200
+   ],
+   "status": "ok",
+   "note": "Genspark 1872×1248 → 300×200 격자, 4배 NEAREST, 무손실 WebP"
   }
  ]
 }

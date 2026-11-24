@@ -247,7 +247,7 @@ footer .nextprev a{background:var(--panel);border:1px solid var(--rule);border-r
 /* 픽셀아트 표지 · 장면 그림 */
 .cover.has-img{background:#fff}
 .cover.has-img .cimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.cover.has-img .ctext{right:4%;width:42%}
+.cover.has-img .ctext{right:4%;width:42%;background:rgba(255,255,255,.88);padding:14px 18px;border-radius:10px}
 .cover.has-img .ctext h1{text-shadow:none}
 img.scene{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--rule);margin:8px 0 6px;background:#fff}
 @media (max-width:620px){
