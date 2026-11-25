@@ -1,6 +1,6 @@
 # 큐브 교실 — Genspark 이미지 요청서 (표지 17장 + 장면 30장)
 
-> **상태 (2026-11-25): 47장 모두 반영 완료 · 추가 1장(S13 scene_00_uses) 요청 대기** — 표지 17장 `img/cover/`(480×270 격자 × 4 = 1920×1080), 장면 30장 `img/scene/`(300×200 격자 × 4 = 1200×800), 공유 미리보기 17장 `img/og/`(격자 400×210 × 3 = 1200×630). 모두 무손실 WebP. 받은 원본은 격자가 일정하지 않은 「픽셀풍」 그림이라, 같은 비율의 격자로 평균 축소한 뒤 정수배 NEAREST로 키웠어요. 아래 지시문은 다시 그릴 때 쓰는 원본이에요.
+> **상태 (2026-11-25): 48장 모두 반영 완료 (S13 scene_00_uses 포함)** — 표지 17장 `img/cover/`(480×270 격자 × 4 = 1920×1080), 장면 30장 `img/scene/`(300×200 격자 × 4 = 1200×800), 공유 미리보기 17장 `img/og/`(격자 400×210 × 3 = 1200×630). 모두 무손실 WebP. 받은 원본은 격자가 일정하지 않은 「픽셀풍」 그림이라, 같은 비율의 격자로 평균 축소한 뒤 정수배 NEAREST로 키웠어요. 아래 지시문은 다시 그릴 때 쓰는 원본이에요.
 
 > 그림체: **16비트 RPG 픽셀아트**(SNES 시대), **흰 배경(#ffffff)의 낮의 연구실**. 그림 안에 글자·숫자·기호 금지(제목은 HTML로 얹음).
 > 캐릭터는 첨부 참고 그림(캐릭터 팩 `adminmrobo/fruitfly-lab-expressions`의 E13 기본 표정 + 6인 라인업)과 똑같이.
@@ -440,7 +440,7 @@ Characters (use the attached reference images): intern Sia (long straight black 
 Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
 ```
 
-## S13 · 장면 scene_00_uses (3:2, 1장) — 2026-11-25 추가, 미반영
+## S13 · 장면 scene_00_uses (3:2, 1장) — 2026-11-25 추가·반영
 
 **올릴 참고 그림:** `refs/style_reference.png`, `refs/lineup.png`, `refs/ref_doc.png`, `refs/ref_fly.png`, `refs/ref_jupanbot.png` (+ 그림체 기준으로 이미 받은 장면 그림 1장)
 
