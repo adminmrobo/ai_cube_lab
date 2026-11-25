@@ -66,10 +66,13 @@ def build(B, chs):
         ('12 IDA*·패턴 데이터베이스', '하한으로 가지를 잘라 최단 경로 찾기', '물류 경로, 로봇 동작 계획, 게임 AI'),
         ('14 부분 목표·학습한 추정', '신경망이 중간 목표와 거리를 제안', 'AI 에이전트의 긴 작업 계획, 신약 후보 탐색, 수학 증명 보조'),
     ]
+    import os as _os
+    _sc = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), 'img', 'scene', 'scene_00_uses.webp')
+    uimg = '<img class="scene" style="max-width:600px" loading="lazy" src="img/scene/scene_00_uses.webp" width="1200" height="800" alt="표본처럼 놓인 큐브에서 자물쇠·지도·로봇 팔·연결망으로 선이 뻗는 장면 그림">' if _os.path.exists(_sc) else ''
     urows = ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % r for r in use_rows)
     o.append(f'''<section class="level" id="uses"><div class="wrap"><h2>이 기법은 어디에 쓰이나 — 큐브는 「연구용 모델 생물」</h2>
 <p>큐브를 푸는 일 자체는 산업에 쓰이지 않아요. 큐브는 생물학의 초파리처럼 <b>방법을 시험하고 가르치기 좋은 기준 문제</b>예요. 상태는 4.3 × 10¹⁹가지로 엄청나게 많은데 규칙은 18가지 돌리기뿐이고, 정답(신의 수 20)까지 알려져 있거든요. 이 시리즈에서 배우는 기법은 아래처럼 바깥 세상으로 이어져요.</p>
-<div class="tw"><table class="tb"><thead><tr><th>장</th><th>배우는 기법</th><th>실제로 쓰이는 곳</th></tr></thead><tbody>{urows}</tbody></table></div>
+{uimg}<div class="tw"><table class="tb"><thead><tr><th>장</th><th>배우는 기법</th><th>실제로 쓰이는 곳</th></tr></thead><tbody>{urows}</tbody></table></div>
 <div class="talk">{says([('robo', 'calc', '큐브 상태가 4.3 × 10¹⁹가지니까, 큐브 섞는 순서를 비밀번호로 쓰면 절대 못 뚫겠네요!'), ('fly', 'magnify', '정말 그래? 4.3 × 10¹⁹는 2의 65제곱쯤이야. 지금 쓰는 암호 키(2의 128제곱 이상)보다 한참 작아. 게다가 큐브 같은 순열군은 컴퓨터가 구조를 빨리 분석하는 알고리즘(슈라이어–심스)이 있어서, 큐브 군을 그대로 암호에 쓰면 금방 뚫려.'), ('doc', 'board', '그래서 실제 암호 연구는 큐브에서 「아이디어」만 가져와요. 섞기(뒤섞기)의 원리, 교환자와 켤레의 구조요. 그리고 훨씬 큰 군이나 다른 연산과 함께 써요. 「몇 수를 돌려야 충분히 섞이나」라는 질문도 암호를 몇 번 반복 적용해야 안전한가라는 질문과 닮았어요.')])}</div>
 <div class="lim"><b>읽을 때 주의</b> — 표의 오른쪽 칸은 「같은 생각이 쓰이는 곳」이에요. 큐브 해법이 그대로 쓰인다는 뜻은 아니에요. OpenAI의 로봇 손 Dactyl(2019)처럼 큐브 자체가 로봇·AI 연구의 시험 과제로 쓰인 사례도 있어요.</div>
 </div></section>''')

@@ -1,6 +1,6 @@
 # 큐브 교실 — Genspark 이미지 요청서 (표지 17장 + 장면 30장)
 
-> **상태 (2026-11-25): 47장 모두 반영 완료** — 표지 17장 `img/cover/`(480×270 격자 × 4 = 1920×1080), 장면 30장 `img/scene/`(300×200 격자 × 4 = 1200×800), 공유 미리보기 17장 `img/og/`(격자 400×210 × 3 = 1200×630). 모두 무손실 WebP. 받은 원본은 격자가 일정하지 않은 「픽셀풍」 그림이라, 같은 비율의 격자로 평균 축소한 뒤 정수배 NEAREST로 키웠어요. 아래 지시문은 다시 그릴 때 쓰는 원본이에요.
+> **상태 (2026-11-25): 47장 모두 반영 완료 · 추가 1장(S13 scene_00_uses) 요청 대기** — 표지 17장 `img/cover/`(480×270 격자 × 4 = 1920×1080), 장면 30장 `img/scene/`(300×200 격자 × 4 = 1200×800), 공유 미리보기 17장 `img/og/`(격자 400×210 × 3 = 1200×630). 모두 무손실 WebP. 받은 원본은 격자가 일정하지 않은 「픽셀풍」 그림이라, 같은 비율의 격자로 평균 축소한 뒤 정수배 NEAREST로 키웠어요. 아래 지시문은 다시 그릴 때 쓰는 원본이에요.
 
 > 그림체: **16비트 RPG 픽셀아트**(SNES 시대), **흰 배경(#ffffff)의 낮의 연구실**. 그림 안에 글자·숫자·기호 금지(제목은 HTML로 얹음).
 > 캐릭터는 첨부 참고 그림(캐릭터 팩 `adminmrobo/fruitfly-lab-expressions`의 E13 기본 표정 + 6인 라인업)과 똑같이.
@@ -440,6 +440,20 @@ Characters (use the attached reference images): intern Sia (long straight black 
 Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
 ```
 
+## S13 · 장면 scene_00_uses (3:2, 1장) — 2026-11-25 추가, 미반영
+
+**올릴 참고 그림:** `refs/style_reference.png`, `refs/lineup.png`, `refs/ref_doc.png`, `refs/ref_fly.png`, `refs/ref_jupanbot.png` (+ 그림체 기준으로 이미 받은 장면 그림 1장)
+
+오리엔테이션 「이 기법은 어디에 쓰이나」(#uses) 상자에 들어가요. 큐브를 표본처럼 가운데 두고, 자물쇠(암호)·지도(물류 경로)·로봇 팔·연결망으로 선이 뻗는 그림이에요. 초파리 연구원이 자물쇠를 의심하는 모습은 상자의 「큐브 군을 그대로 암호에 쓰면 안전하지 않다」 대화와 맞춰요.
+
+### scene_00_uses — 오리엔테이션 · 이 기법은 어디에 쓰이나 · 연구용 모델 생물(표본 큐브와 연결선) 비유 (박사, 초파리 연구원, 주판봇)  → 저장: scene_00_uses.png
+```
+16-bit SNES-era RPG pixel art. Clean pixel grid: draw on a 300x200 pixel canvas, then upscale exactly x4 with nearest neighbor to 1200x800 (3:2). Bright daytime setting with a white background, soft pastel accents, crisp 1-pixel outlines. Absolutely no text, letters, numbers, math symbols, logos or watermarks.
+Everyday analogy scene: A classic 3x3x3 puzzle cube with six plain sticker colors (yellow top, green front, orange right, white bottom, red left, blue back), no brand logo, sits on a small pedestal in the center like a lab specimen under a glass dome. From the cube, four thin colored strings run outward to four small objects pinned on the white wall around it, like a detective's corkboard: (1) a brass padlock with a key, (2) a small folded paper map with one dotted route between pins and a tiny delivery truck, (3) a small industrial robot arm gripping a block, (4) a cluster of round nodes connected by lines like a network. The Professor stands beside the pedestal and points along one string. Jupanbot happily holds up the padlock's key. The fruit-fly researcher hovers close to the padlock, examining it through a magnifying glass with a doubtful look.
+Characters (use the attached reference images): the Professor (spiky black hair with one white streak, round glasses, white lab coat over black vest and black tie); the fruit-fly researcher (anthropomorphic black fruit fly, big red compound eyes, blue helmet with colorful cables, white lab coat, translucent wings); Jupanbot (retro beige CRT-monitor head with a green smiling face on the screen, small antenna, wooden abacus body, dark tank treads).
+Make the key object of the analogy large and centered so the idea reads at a glance. Keep characters exactly like the attached reference images. Friendly classroom mood; no winner/loser expressions.
+```
+
 ## 3. 저장 이름 체크리스트
 
 | ✓ | 저장 이름 | 크기 | 들어갈 곳 |
@@ -491,6 +505,7 @@ Make the key object of the analogy large and centered so the idea reads at a gla
 | ☐ | scene_14_lv2.png | 1200×800 | 14장 2단계 · 몬테카를로 트리 탐색 — 무작위로 끝까지 굴려 보기 「일상으로 치면」 카드 |
 | ☐ | scene_15_lv1.png | 1200×800 | 15장 1단계 · 세 갈래 다시 보기 — 손, 대수, 기계 「일상으로 치면」 카드 |
 | ☐ | scene_15_lv2.png | 1200×800 | 15장 2단계 · 같은 큐브, 다른 풀이 — 수의 크기 한 장 정리 「일상으로 치면」 카드 |
+| ☐ | scene_00_uses.png | 1200×800 | index.html 「이 기법은 어디에 쓰이나」 상자 (S13, 2026-11-25 추가) |
 
 ## 4. 반영 방법 (받은 뒤)
 
