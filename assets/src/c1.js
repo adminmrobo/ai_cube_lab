@@ -112,6 +112,49 @@ window.drawCube=drawCube;
 function cubeSvg(el,label,h){var narrow=(el.clientWidth||640)<520,sv=svg(el,640,narrow?790:(h||330),label||'큐브의 입체 그림과 펼친 그림');if(narrow)sv.setAttribute('data-stack','1');return sv;}
 window.cubeSvg=cubeSvg;
 
+/* 입체 3D 보기: 조각 26개를 CSS 3D 상자로 그리고, 돌리는 층만 회전축 둘레로 움직인다.
+   계산의 기준은 위의 CUBE 엔진(스티커 54장). 3D는 엔진 상태를 따라 보여 주기만 한다.
+   좌표: 엔진은 위가 +y, 화면(CSS)은 아래가 +y → css = [x, -y, z].
+   시계 방향 돌리기 = 그 면의 바깥 법선(CSS 좌표) 둘레 +90° 회전 (tools 검산: 18가지 모두 엔진과 일치) */
+var CUBE3D=(function(){
+  var SP=54,N3={U:[0,-1,0],D:[0,1,0],R:[1,0,0],L:[-1,0,0],F:[0,0,1],B:[0,0,-1]};
+  var FT={F:'translateZ(25px)',B:'rotateY(180deg) translateZ(25px)',R:'rotateY(90deg) translateZ(25px)',L:'rotateY(-90deg) translateZ(25px)',U:'rotateX(90deg) translateZ(25px)',D:'rotateX(-90deg) translateZ(25px)'};
+  function dot(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2];}
+  function css(v){return [v[0],-v[1],v[2]];}
+  function rod(n,t){var c=Math.cos(t),s=Math.sin(t),k=1-c,x=n[0],y=n[1],z=n[2];
+    return [[c+x*x*k,x*y*k-z*s,x*z*k+y*s],[y*x*k+z*s,c+y*y*k,y*z*k-x*s],[z*x*k-y*s,z*y*k+x*s,c+z*z*k]];}
+  function mat(R,p){return 'matrix3d('+[R[0][0],R[1][0],R[2][0],0,R[0][1],R[1][1],R[2][1],0,R[0][2],R[1][2],R[2][2],0,p[0]*SP,p[1]*SP,p[2]*SP,1].map(function(v){return +v.toFixed(5);}).join(',')+')';}
+  function mv(A,v){return [dot(A[0],v),dot(A[1],v),dot(A[2],v)];}
+  var STK={};CUBE.ST.forEach(function(t,i){var n=css(t.n),f;for(var k in N3)if(N3[k].join()===n.join())f=k;STK[css(t.p).join()+'|'+f]=i;});
+  function make(el){
+    var stage=H('div','cube3d',null,el);stage.setAttribute('role','img');stage.setAttribute('aria-label','입체 큐브. 끌어서 시점을 돌릴 수 있어요.');
+    var root=H('div','c3root',null,stage),cubies=[],rx=-28,ry=-38,anim=null,queue=[],fin=null;
+    for(var x=-1;x<=1;x++)for(var y=-1;y<=1;y++)for(var z=-1;z<=1;z++){if(!x&&!y&&!z)continue;
+      var e=H('div','c3cub',null,root),fc={};
+      for(var f in FT){var d=H('div','c3face',null,e);d.style.transform=FT[f];var i=STK[[x,y,z].join()+'|'+f];if(i!=null)fc[f]=[d,i];else d.style.background='#16212b';}
+      var c={el:e,p:[x,y,z],fc:fc};cubies.push(c);e.style.transform=mat([[1,0,0],[0,1,0],[0,0,1]],c.p);}
+    function view(){root.style.transform='rotateX('+rx+'deg) rotateY('+ry+'deg)';}view();
+    var drag=null;
+    stage.addEventListener('pointerdown',function(ev){drag=[ev.clientX,ev.clientY,rx,ry];try{stage.setPointerCapture(ev.pointerId);}catch(_){}});
+    stage.addEventListener('pointermove',function(ev){if(!drag)return;ry=drag[3]+(ev.clientX-drag[0])*0.5;rx=Math.max(-85,Math.min(85,drag[2]-(ev.clientY-drag[1])*0.5));view();});
+    ['pointerup','pointercancel'].forEach(function(t){stage.addEventListener(t,function(){drag=null;});});
+    function paint(st){cubies.forEach(function(c){c.el.style.transform=mat([[1,0,0],[0,1,0],[0,0,1]],c.p);for(var f in c.fc)c.fc[f][0].style.background=CUBE.COL[st[c.fc[f][1]]];});}
+    function stop(){if(anim){cancelAnimationFrame(anim);anim=null;}queue=[];}
+    /* from 상태에서 moves를 차례로 보여 준 뒤 to 상태로 맞춘다 */
+    function show(from,moves,to,dur){stop();fin=to;
+      if(!moves||!moves.length||(window.LAB&&LAB.reduced)){paint(to);return;}
+      var cur=from.slice();paint(cur);queue=moves.slice();dur=dur||(moves.length>8?170:360);
+      (function step(){if(!queue.length){paint(fin);anim=null;return;}
+        var m=queue.shift(),n=N3[m[0]],a=m.length===1?1:m[1]==="'"?-1:2,L=cubies.filter(function(c){return dot(c.p,n)===1;}),d=dur*(a===2?1.4:1),t0=null;
+        function fr(ts){if(t0===null)t0=ts;var t=Math.min(1,(ts-t0)/d),k=t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2,R=rod(n,k*a*Math.PI/2);
+          L.forEach(function(c){c.el.style.transform=mat(R,mv(R,c.p));});
+          if(t<1){anim=requestAnimationFrame(fr);}else{cur=CUBE.move(cur,m);paint(cur);step();}}
+        anim=requestAnimationFrame(fr);})();}
+    return {el:stage,show:show,stop:stop};}
+  return {make:make};
+})();
+window.CUBE3D=CUBE3D;
+
 var MOVE_KO={U:'윗면',D:'아랫면',R:'오른면',L:'왼면',F:'앞면',B:'뒷면'};
 function moveKo(m){var f=MOVE_KO[m[0]];return m.length===1?f+' 시계 방향 90°':m[1]==="'"?f+' 반시계 방향 90°':f+' 180°';}
 window.moveKo=moveKo;
@@ -119,20 +162,25 @@ window.moveKo=moveKo;
 /* 큐브 시뮬레이터: 돌리기·되돌리기·섞기·식 입력·반복 횟수 */
 W.cube=function(el,o){
   var st=CUBE.solved(),hist=[],s=cubeSvg(el,'돌릴 수 있는 큐브'),moves=o.moves||CUBE.MOVES;
+  var v3=null,on3=false,aFrom=null,aMoves=null;
   var c=ctrl(el);H('span','glabel','돌리기:',c);
   moves.forEach(function(m){btn(c,m,function(){doMove([m]);}).setAttribute('aria-label',moveKo(m));});
   var c2=ctrl(el);
-  btn(c2,'한 수 되돌리기',function(){if(!hist.length)return;var m=hist.pop();st=CUBE.move(st,CUBE.inv(m));last=[];draw();});
+  btn(c2,'한 수 되돌리기',function(){if(!hist.length)return;var m=hist.pop();aFrom=st.slice();aMoves=[CUBE.inv(m)];st=CUBE.move(st,CUBE.inv(m));last=[];draw();});
   btn(c2,'처음으로',function(){st=CUBE.solved();hist=[];last=[];draw();});
-  if(o.scramble!==false)btn(c2,'섞기 (20수)',function(){var t=CUBE.scramble(20,(Date.now()%9973)+1);st=CUBE.move(CUBE.solved(),t);hist=[];last=[];note='섞은 식: '+t.join(' ');draw();});
+  if(o.scramble!==false)btn(c2,'섞기 (20수)',function(){var t=CUBE.scramble(20,(Date.now()%9973)+1);aFrom=CUBE.solved();aMoves=t;st=CUBE.move(CUBE.solved(),t);hist=[];last=[];note='섞은 식: '+t.join(' ');draw();});
+  var b3=btn(c2,'입체로 보기 (3D)',function(){on3=!on3;b3.setAttribute('aria-pressed',on3?'true':'false');b3.textContent=on3?'펼친 그림으로 보기':'입체로 보기 (3D)';
+    if(on3&&!v3){v3=CUBE3D.make(el);el.insertBefore(v3.el,s);}
+    s.style.display=on3?'none':'';v3.el.style.display=on3?'':'none';if(!on3)v3.stop();aFrom=aMoves=null;draw();},false);
   var c3=ctrl(el),inp=null,note='';
   if(o.input!==false){H('span','glabel','식 입력:',c3);inp=H('input',null,null,c3);inp.type='text';inp.value=o.seq||"R U R' U'";inp.setAttribute('aria-label','돌리기 식');inp.style.cssText='font:inherit;padding:4px 8px;border:1px solid var(--rule);border-radius:8px;min-width:150px;flex:1';
     btn(c3,'식대로 돌리기',function(){doMove(CUBE.tok(inp.value));});
     if(o.order!==false)btn(c3,'제자리까지 몇 번?',function(){var t=CUBE.tok(inp.value);if(!t.length)return;var k=CUBE.order(CUBE.perm(t));note='식 「'+t.join(' ')+'」('+t.length+'수)을 처음 상태에서 <b>'+k+'번</b> 반복하면 제자리로 돌아와요. (모두 '+fmt(k*t.length)+'수)';draw();});}
-  if(o.presets){var c4=ctrl(el);H('span','glabel','미리 정한 식:',c4);o.presets.forEach(function(p){btn(c4,p[0],function(){if(inp)inp.value=p[1];st=CUBE.solved();hist=[];doMove(CUBE.tok(p[1]));note=p[2]||'';draw();});});}
+  if(o.presets){var c4=ctrl(el);H('span','glabel','미리 정한 식:',c4);o.presets.forEach(function(p){btn(c4,p[0],function(){if(inp)inp.value=p[1];st=CUBE.solved();hist=[];doMove(CUBE.tok(p[1]));aFrom=CUBE.solved();aMoves=CUBE.tok(p[1]);note=p[2]||'';draw();});});}
   var ou=out(el),last=[];
-  function doMove(t){var before=st.slice();t.forEach(function(m){st=CUBE.move(st,m);hist.push(m);});last=[];for(var i=0;i<54;i++)if(before[i]!==st[i])last.push(i);note=note&&t.length>1?note:'';draw();}
+  function doMove(t){var before=st.slice();aFrom=before;aMoves=t.slice();t.forEach(function(m){st=CUBE.move(st,m);hist.push(m);});last=[];for(var i=0;i<54;i++)if(before[i]!==st[i])last.push(i);note=note&&t.length>1?note:'';draw();}
   function draw(){drawCube(s,st,{mark:o.diff===false?[]:last});
+    if(on3&&v3){v3.show(aFrom||st,aFrom?aMoves:[],st);}aFrom=aMoves=null;
     var h='<p>지금까지 돌린 수: <b>'+hist.length+'</b>수 '+(hist.length?'('+hist.slice(-12).join(' ')+(hist.length>12?' …':'')+')':'')+'</p>';
     h+=CUBE.isSolved(st)?'<p class="g">다 맞춘 상태예요.</p>':'<p class="a">섞인 상태예요.'+(last.length?' 보라 테두리 = 방금 바뀐 스티커 '+last.length+'장':'')+'</p>';
     if(note)h+='<p>'+note+'</p>';ou.innerHTML=h;}

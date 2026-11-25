@@ -22,7 +22,7 @@ def build(B, chs):
     B.GLOSS = {'군': '되돌릴 수 있는 움직임들의 모음이 지키는 네 가지 약속(이어 하기·아무것도 안 하기·되돌리기·묶는 순서). 큐브의 움직임 모음이 대표 예.',
                '신의 수': '어떤 큐브든 가장 똑똑하게 풀 때 필요한 수의 최댓값. 반 바퀴도 한 수로 세면 20.'}
     o = [B.head(B.SERIES + ' · 오리엔테이션', '중학생도 따라오는 루빅스 큐브의 수학 15장 + 실전 연습장. 사람의 풀이법, 군론, 컴퓨터 탐색과 AI를 박사 선생님·두 조교·수강생 6명과 함께.')]
-    o.append(f'<nav class="top" aria-label="목차"><a class="logo" href="index.html">{B.SHORT}</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">세 갈래</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
+    o.append(f'<nav class="top" aria-label="목차"><a class="logo" href="index.html">{B.SHORT}</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">세 갈래</a><a href="#uses">어디에 쓰나</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
     o.append(B.cover_html('cover_00', B.SHORT, '오리엔테이션 · 00', '루빅스 큐브로 배우는 군 · 탐색 · AI — 15장 + 실전 연습장', '큐브 교실 표지 — 박사, 조교 둘, 수강생들이 큰 큐브 앞에 모인 강의실'))
     o.append('''<header class="hero"><div class="wrap"><div class="kicker">연구실 해설 시리즈 · 큐브의 수학과 AI 입문</div><h1>큐브 교실 — 루빅스 큐브로 배우는 군·탐색·AI</h1>
 <p class="q">핵심 질문 — 손바닥만 한 큐브 하나가, 어떻게 수학과 컴퓨터와 AI를 한꺼번에 가르쳐 줄 수 있을까?</p>
@@ -33,7 +33,7 @@ def build(B, chs):
 <li><b>무엇을:</b> 큐브의 상태 수(4.3 × 10¹⁹)에서 출발해, 사람의 풀이법(손), 군으로 보는 큐브(대수), 컴퓨터 탐색과 AI(기계) 세 갈래로 「신의 수 20」까지 갑니다.</li>
 <li><b>왜 중요한가:</b> 「상태는 엄청 많고 규칙은 단순한 문제」를 푸는 방법 — 세기, 바뀌지 않는 것 찾기, 나눠서 찾기, 하한으로 자르기 — 은 경로 찾기·일정 짜기·AI 탐색 어디에나 쓰여요.</li>
 <li><b>생활·현장에서는:</b> 조립 검사(불변량), 물류 경로(그래프 최단 경로), 추천·계획 AI(부분 목표 탐색)를 이해하는 눈이 생겨요. 그리고 AI가 낸 답을 검증하는 습관도요.</li></ol>
-<p class="note">각 장은 독립적으로 읽을 수 있지만 순서대로 읽으면 가장 편해요. 장마다 20~25분이면 충분합니다. 큐브 시뮬레이터가 페이지마다 들어 있어 실물 큐브가 없어도 돼요.</p></div></div>''')
+<p class="note">각 장은 독립적으로 읽을 수 있지만 순서대로 읽으면 가장 편해요. 장마다 20~25분이면 충분합니다. 큐브 시뮬레이터가 페이지마다 들어 있어 실물 큐브가 없어도 돼요. 「입체로 보기 (3D)」를 누르면 층이 실제로 돌아가는 모습도 볼 수 있어요.</p></div></div>''')
     castl = ''.join('<div>%s<div><span class="role">%s</span><b>%s</b><span>%s</span></div></div>' % (img(w, B.PEOPLE[w][2], cls=''), esc(B.PEOPLE[w][1]), esc(B.PEOPLE[w][0]), esc(B.PEOPLE[w][3]))
                     for w in ['doc', 'fly', 'robo', 'sia', 'moa', 'asst', 'x1', 'x2', 'x3'])
     g1 = ''.join(img(w, 'e13', cls='') for w in B.GROUP1[1])
@@ -56,6 +56,23 @@ def build(B, chs):
     cards += '<a href="practice/index.html"><span class="n">마지막 장</span><b>실전 연습장 — 큐브 사업장 시뮬레이터</b><span>스피드큐빙 학원, 솔버 공장, 조립 검수소, 길 안내 센터를 직접 운영해 보며 배운 것을 써 봐요.</span><span class="fmt">시뮬레이터</span></a>'
     bas = ' → '.join('<a href="%s.html">%02d</a>' % (c['slug'], c['no']) for c in chs if c['no'] in B.BASIC) + ' → <a href="practice/index.html">실전 연습장</a>'
     adv = ', '.join('<a href="%s.html">%02d %s</a>' % (c['slug'], c['no'], esc(c['title'].split(' — ')[0])) for c in chs if c['no'] not in B.BASIC)
+    use_rows = [
+        ('08 풀 수 있는 세 조건', '불변량 — 아무리 돌려도 바뀌지 않는 값으로 검사', '조립·공정 검사, 데이터 오류 검사(홀짝 패리티)'),
+        ('07 켤레와 교환자', '준비 → 작업 → 되돌리기로 일부만 바꾸기', '양자컴퓨터 회로 설계(솔로베이–키타예프 알고리즘이 교환자를 써요), 로봇의 국소 조작'),
+        ('07·06 교환자·군', '결과만 보고 어떤 식(켤레·교환자)을 썼는지 알아내기 어렵게 만드는 성질', '<b>암호</b> — 군 기반 공개키 교환(안셸–안셸–골드펠트 1999는 교환자, 고기형·이상진 외 2000은 땋임군의 켤레를 씀)'),
+        ('01·02 섞기와 돌리기 기호', '행·열을 돌려 섞기(뒤섞기)', '<b>암호</b> — 이미지 암호화: 큐브 돌리기 원리로 픽셀을 섞은 뒤 비밀 키로 XOR (Loukhaoukha 외, 2012)'),
+        ('09·10 부분군·깔때기', '큰 문제를 단계별로 좁히기', '일정 짜기, 공정 계획처럼 단계를 나눠 푸는 최적화'),
+        ('11 케일리 그래프의 지름', '최악의 경우 몇 단계인가', '병렬 컴퓨터 연결망 설계(스타 그래프·팬케이크 그래프가 케일리 그래프)'),
+        ('12 IDA*·패턴 데이터베이스', '하한으로 가지를 잘라 최단 경로 찾기', '물류 경로, 로봇 동작 계획, 게임 AI'),
+        ('14 부분 목표·학습한 추정', '신경망이 중간 목표와 거리를 제안', 'AI 에이전트의 긴 작업 계획, 신약 후보 탐색, 수학 증명 보조'),
+    ]
+    urows = ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % r for r in use_rows)
+    o.append(f'''<section class="level" id="uses"><div class="wrap"><h2>이 기법은 어디에 쓰이나 — 큐브는 「연구용 모델 생물」</h2>
+<p>큐브를 푸는 일 자체는 산업에 쓰이지 않아요. 큐브는 생물학의 초파리처럼 <b>방법을 시험하고 가르치기 좋은 기준 문제</b>예요. 상태는 4.3 × 10¹⁹가지로 엄청나게 많은데 규칙은 18가지 돌리기뿐이고, 정답(신의 수 20)까지 알려져 있거든요. 이 시리즈에서 배우는 기법은 아래처럼 바깥 세상으로 이어져요.</p>
+<div class="tw"><table class="tb"><thead><tr><th>장</th><th>배우는 기법</th><th>실제로 쓰이는 곳</th></tr></thead><tbody>{urows}</tbody></table></div>
+<div class="talk">{says([('robo', 'calc', '큐브 상태가 4.3 × 10¹⁹가지니까, 큐브 섞는 순서를 비밀번호로 쓰면 절대 못 뚫겠네요!'), ('fly', 'magnify', '정말 그래? 4.3 × 10¹⁹는 2의 65제곱쯤이야. 지금 쓰는 암호 키(2의 128제곱 이상)보다 한참 작아. 게다가 큐브 같은 순열군은 컴퓨터가 구조를 빨리 분석하는 알고리즘(슈라이어–심스)이 있어서, 큐브 군을 그대로 암호에 쓰면 금방 뚫려.'), ('doc', 'board', '그래서 실제 암호 연구는 큐브에서 「아이디어」만 가져와요. 섞기(뒤섞기)의 원리, 교환자와 켤레의 구조요. 그리고 훨씬 큰 군이나 다른 연산과 함께 써요. 「몇 수를 돌려야 충분히 섞이나」라는 질문도 암호를 몇 번 반복 적용해야 안전한가라는 질문과 닮았어요.')])}</div>
+<div class="lim"><b>읽을 때 주의</b> — 표의 오른쪽 칸은 「같은 생각이 쓰이는 곳」이에요. 큐브 해법이 그대로 쓰인다는 뜻은 아니에요. OpenAI의 로봇 손 Dactyl(2019)처럼 큐브 자체가 로봇·AI 연구의 시험 과제로 쓰인 사례도 있어요.</div>
+</div></section>''')
     o.append(f'''<section class="level" id="tracks"><div class="wrap"><h2>두 갈래 과정 — 어디까지 읽을까</h2>
 <div class="steps"><div><b class="n">1</b><b>기본 과정 <span class="track basic">기본</span></b><p>처음 오신 분은 이 순서만 따라가도 「신의 수 20」과 실전 연습장까지 갈 수 있어요.</p><p>{bas}</p></div>
 <div><b class="n">2</b><b>심화 과정 <span class="track adv">심화</span></b><p>기본 과정을 마친 뒤 도전하세요. 풀이법의 세부, 잉여류, 컴퓨터 알고리즘, AI 연구를 더 깊이 다뤄요.</p><p>{adv}</p></div>
